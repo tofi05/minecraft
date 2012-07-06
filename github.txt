@@ -1,0 +1,38 @@
+zaregistrovat
+
+https://github.com/
+
+ztahnout 
+
+http://git-scm.com/downloads
+
+naintalovat, zapnout a nastavit
+
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@youremail.com"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+inicialize repozitare
+
+cd /c/tvoje/umisteni/webu
+git init
+git remote add origin https://github.com/tofi05/minecraft.git
+
+pred praci
+
+git status  		// zjisti co se zmenilo
+git add . 		// pridat soubory co se zmenily
+git commit -am 'neco'
+git pull origin master	// ztahne nejnovejsi vezi z repozitare
+
+po praci
+
+git status
+git add .
+git commit -am 'poznamka - ceho se zmena tyka'	
+git pull origin master				// kdyby nadou tam nekdo udelal dalsi zmenu
+git push origin master
+
+
+
