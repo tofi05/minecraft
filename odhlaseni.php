@@ -1,0 +1,3 @@
+﻿<?
+  echo "Byli jste odhlášeni";
+?>
