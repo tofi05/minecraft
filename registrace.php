@@ -2,9 +2,8 @@
 
 $def = array('login' => '', 'jmeno' => '', 'prijmeni' => '', 'heslo' => '', 'email' => '');
 
-$serverName = "STROJ"; //serverName\instanceName
-$connectionInfo = array("Database" => "minecraft");
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+
+$conn = conn();
 
 if (!$conn) {
   echo "Registrace monentalne nefunguje, zkuste to pozdeji.<br />";

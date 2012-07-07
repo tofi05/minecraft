@@ -1,5 +1,5 @@
-﻿<?php
-session_start();
+<?php
+
 if (empty($_GET["clanek"])){
 $_GET["clanek"]="_uvod";
 }
