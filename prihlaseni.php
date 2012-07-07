@@ -1,4 +1,4 @@
-﻿<?
+<?php
 $vybrane=array("nick"=>" ", "pwd"=> " ");
 $budemezobrazovat=true;
 if (!empty($_POST)) { // už se odeslalo

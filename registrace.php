@@ -1,7 +1,6 @@
 <?php
 
 $def = array('login' => '', 'jmeno' => '', 'prijmeni' => '', 'heslo' => '', 'email' => '');
-$whitelist = "C:/hry/minecraft WF/server 1.2.5.R1.3/white-list.txt";
 
 $serverName = "STROJ"; //serverName\instanceName
 $connectionInfo = array("Database" => "minecraft");
@@ -27,13 +26,7 @@ if (!$conn) {
           //var_dump(sqlsrv_errors());
         }
       }
-      if (!sqlsrv_has_rows($stmt)) { // login je jedinecny          
-        /**
-         *  zapsani do white listu
-         */
-        $wl = fopen($whitelist, "a");
-        fwrite($wl, $def['login'] . "\r\n");
-        fclose($wl);
+      if (!sqlsrv_has_rows($stmt)) { // login je jedinecny 
 
         /**
          *  ulozeni do DB
